@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ebecee;
+    color: #b3bcbc;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 50px auto;
+}
+
+.header {
+    margin-top: 60px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+}
+
+.header ul li {
+    margin: 0 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.header ul li:hover,
+.header ul li.active {
+    color: #4abd3e;
+}
+
+.view_wraper {
+    margin-top: 50px;
+}
+
+.view_wraper ul li div {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+.view_wraper ul li div div {
+    margin: 10px 15px;
+    padding: 10px;
+    color: #ffffff;
+    /*gride*/
+    /* margin: 0;
+    box-sizing: border-box; */
+}
+
+.S8Y5s {
+    order: 2;
+}
+
+._2v5h0 {
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+._28Jw2 {
+    order: 1;
+}
+
+._15gkk {
+    background-color: #1c1b3d;
+    margin: 10px 10px;
+    /* width: 180px; */
+    border-radius: 15px;
+}
+
+.search {
+    max-width: 450px;
+    margin: 150px auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    /* display: flex;
+    top: 0;
+    width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.search input[type="text"] {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-style: none;
+    margin-right: 5px;
+    order: 1;
+}
+
+.search input:focus {
+    outline: none;
+    text-align: center;
+}
+
+.search .input_container {
+    position: relative;
+    width: 500px;
+}
+
+.input_container .icon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    line-height: 55px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    color: #33BEFF;
+    cursor: pointer;
+}
+
+.input_container .autoComplet {
+    background: white;
+    max-height: 280px;
+    color: black;
+    padding: 5px;
+    opacity: 0;
+    overflow: auto;
+}
+
+.input_container.active .autoComplet {
+    opacity: 1;
+}
+
+.input_container .autoComplet li {
+    padding: 12px 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.input_container.active .autoComplet li {
+    display: block;
+}
+
+.input_container .autoComplet li:hover {
+    background: #ebecee;
+}
